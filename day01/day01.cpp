@@ -1,37 +1,17 @@
-﻿// 给类型起别名.c.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+﻿// day01.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "socketclient.h"
 
-typedef unsigned int u32;
-
-typedef struct data
+int main(void)
 {
-    int a;
-    int b;
-}DataStruct;
 
-int main()
-{
-    u32 t=333;
-    printf("%d\n", t);
-    
-    DataStruct s;
-    s.a = 0;
-    s.b = 0;
-    //memset(&s, 0, sizeof(s));
-    printf("%d %d\n", s.a, s.b);
-    
-
-    u32 *test = &t;
-    printf("t:%d %t:&%d\n", t, &t);
-    printf("test:%d\n",test);
-
-    *test = 22;
-    printf("*test=%d %d %d %d\n", *test, test, &t, t);
-
+	printf("\n");
+	system("pause");
+	return 0;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
